@@ -1,0 +1,58 @@
+//- index.pug
+doctype html
+html
+  head
+    title Era's Dance Academy
+    style
+      include ../static/style.css
+  body
+    nav#navbar
+        ul 
+            div#logo 
+                img(src="/static/imgg/img3.png")
+                | EDA
+            li #[a(href="/") Home]
+            li #[a(href="/") About]
+            li #[a(href="/") Services ]
+            li #[a(href="/") Class Info]
+            li #[a(href="/") Contact Us]
+
+    section#introSection
+        div Welcome to Era's Dance Academy
+        div.small Dance to the beat of your dreams
+
+    section#missionSection 
+        h2 Our Mission
+        div.card 
+            h3 Dance Perfection
+            div.card-box 
+                div.card-img 
+                    img(src="/static/imgg/img1.jpg")
+                div.card-content 
+                    p This is the best dance academy.
+        div.card 
+            h3 Dance the way you like
+            div.card-box 
+                div.card-img 
+                    img(src="/static/imgg/img2.jpg")
+                div.card-content 
+                    p This is the best dance academy.
+        div.card 
+            h3 Expert Teaching
+            div.card-box 
+                div.card-img 
+                    img(src="/static/imgg/img4.png")
+                div.card-content 
+                    p This is the best dance academy.
+
+    section#sponsorsSection
+        h2 Our Sponsors
+        div#sponsors 
+            img(src="/static/imgg/sp1.jpg", alt="sponsors", class="spimg")
+            img(src="/static/imgg/sp2.png", alt="sponsors", class="spimg")
+            img(src="/static/imgg/sp3.jpg", alt="sponsors", class="spimg")
+            img(src="/static/imgg/sp4.png", alt="sponsors", class="spimg")
+    footer#footer
+        | Copyright 2019 eradanceacademy.com
+    script
+      include ../static/index.js
